@@ -253,7 +253,7 @@ export default function GoogleMap({ locations }: GoogleMapProps) {
 
   const clearDirections = () => {
     if (directionsRenderer) {
-      directionsRenderer.setDirections({ routes: [] } as google.maps.DirectionsResult);
+      directionsRenderer.setDirections(null);
       setShowDirections(false);
       setActiveDirectionIndex(null);
     }
